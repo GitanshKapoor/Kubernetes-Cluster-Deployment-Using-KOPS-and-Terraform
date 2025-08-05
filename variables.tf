@@ -23,9 +23,9 @@ variable "desired_capacity" {
 }
 
 variable "zone_name" {
-  description = "The DNS zone name for Route53"
+  description = "The DNS zone name for Route 53 (e.g., example.google.com, anything.yourdomain.com)"
   type        = string
-  default     = "<hostname>.<domain>"
+  default     = "<hostname>.<Domain>"
 }
 
 variable "aws_access_key" {
@@ -39,3 +39,4 @@ variable "aws_secret_key" {
   type        = string
   sensitive   = true
 }
+
