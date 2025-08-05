@@ -64,13 +64,13 @@ terraform apply
 <li> Copy the NS (Name Server) records.
 <br> 
 
-![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/NameServer%20Record.png)
+![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/DNS.png)
 
 <li>Go to your domain registrar (e.g., GoDaddy, Namecheap).
 <li>Update the domain's nameservers to the AWS Route 53 NS records.
 <br>
   
-![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/DNS.png)
+![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/NameServer%20Record.png)
 
 <hr>
 
