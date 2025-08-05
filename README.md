@@ -15,7 +15,7 @@ Before you begin, ensure the following tools are installed on your machine:
 
 ---
 ## 🔐 Step 1: Create SSH Key Pairs and Configure AWS CLI Credentials
-Generate a separate SSH key pairs:
+Generate a separate SSH key pair:
 controller-key: for accessing the Kops Instance
 ``` bash
 ssh-keygen -t rsa -f controller-key
@@ -151,8 +151,8 @@ kops validate cluster --state=s3://<your-kops-state-store>
 
 <hr>
 
-> [!Warning]
-> <li> Ensure your domain is properly configured with Route 53 </li> <br>
-> <li> S3 bucket used by KOPS must be in the same region as your cluster </li> <br>
-> <li> The SSH public key path must match the one on your local machine </li> <br>
-> <li> Always use a domain that you own and control </li>
+### ⚠️ Warning
+- Ensure your domain is properly configured with Route 53
+- S3 bucket used by KOPS must be in the same region as your cluster
+- The SSH public key path must match the one on your local machine
+- Always use a domain that you own and control
