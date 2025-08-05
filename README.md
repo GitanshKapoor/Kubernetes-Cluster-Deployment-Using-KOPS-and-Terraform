@@ -102,7 +102,7 @@ kops create cluster \
   --node-count=2 \
   --node-size=t3.small \
   --control-plane-size=t3.medium \
-  --dns-zone=wordpress.gitanshdevops.space \
+  --dns-zone=<hostname>.<your-domain> \
   --node-volume-size=12 \
   --control-plane-volume-size=12 \
   --ssh-public-key=/home/ubuntu/.ssh/id_rsa.pub
