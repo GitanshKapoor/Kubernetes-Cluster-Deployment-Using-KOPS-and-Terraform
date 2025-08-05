@@ -129,8 +129,10 @@ kops update cluster \
   --yes \
   --admin
 ```
+
 Replace:
 - **your-domain.com** with your FQDN (e.g. example.yourdomain.com)
+- **your-kops-state-store** with your S3 bucket name created automatically check
 
 
 <hr>
