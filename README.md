@@ -114,8 +114,8 @@ kops create cluster \
   --ssh-public-key=/home/ubuntu/.ssh/id_rsa.pub
 ```
 Replace:
-<your-domain> with your FQDN (e.g. cluster.yourdomain.com)
-<your-kops-state-store> with your S3 bucket name
+- <your-domain> with your FQDN (e.g. cluster.yourdomain.com)
+- <your-kops-state-store> with your S3 bucket name created automatically
 
 <hr>
 
