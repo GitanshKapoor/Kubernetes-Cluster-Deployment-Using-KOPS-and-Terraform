@@ -57,15 +57,20 @@ terraform apply
 <hr>
 
 ## 🌐 Step 3: Configure Route 53 DNS
-After Route 53 is provisioned via Terraform:
+<li> After Route 53 is provisioned via Terraform:
 
-Go to AWS Route 53 → Hosted Zones.
+<li> Go to AWS Route 53 → Hosted Zones.
 
-Copy the NS (Name Server) records.
-<image>
-Go to your domain registrar (e.g., GoDaddy, Namecheap).
-Update the domain's nameservers to the AWS Route 53 NS records.
-<image>
+<li> Copy the NS (Name Server) records.
+<br> 
+
+![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/NameServer%20Record.png)
+
+<li>Go to your domain registrar (e.g., GoDaddy, Namecheap).
+<li>Update the domain's nameservers to the AWS Route 53 NS records.
+<br>
+  
+![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/DNS.png)
 
 <hr>
 
