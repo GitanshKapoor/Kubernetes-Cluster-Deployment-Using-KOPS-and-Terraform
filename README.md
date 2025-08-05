@@ -1,4 +1,4 @@
-8# 🚀 Kubernetes Cluster Setup using KOPS, Terraform & AWS CLI
+# 🚀 Kubernetes Cluster Setup using KOPS, Terraform & AWS CLI
 
 This repository provides a step-by-step guide to provision a production-ready Kubernetes cluster using **KOPS**, **Terraform**, and **AWS CLI**. It automates the infrastructure setup, Route 53 DNS configuration, and Kubernetes cluster creation on AWS EC2 instances.
 
@@ -108,14 +108,13 @@ kops create cluster \
   --node-count=2 \
   --node-size=t3.small \
   --control-plane-size=t3.medium \
-  --dns-zone=<hostname>.<your-domain> \
+  --dns-zone=<your-domain> \
   --node-volume-size=12 \
   --control-plane-volume-size=12 \
   --ssh-public-key=/home/ubuntu/.ssh/id_rsa.pub
 ```
 Replace:
-- **your-domain** with your domain (e.g. yourdomain.com)
-- **hostname.your-domain.com** with your FQDN (e.g. example.yourdomain.com)
+- **your-domain.com** with your FQDN (e.g. example.yourdomain.com)
 - **your-kops-state-store** with your S3 bucket name created automatically check
 
 <hr>
@@ -130,6 +129,9 @@ kops update cluster \
   --yes \
   --admin
 ```
+Replace:
+- **your-domain.com** with your FQDN (e.g. example.yourdomain.com)
+
 
 <hr>
 
