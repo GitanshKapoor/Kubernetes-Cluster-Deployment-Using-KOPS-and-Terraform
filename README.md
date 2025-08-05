@@ -12,6 +12,7 @@ Before you begin, ensure the following tools are installed on your machine:
 - ✅ Terraform
 - ✅ A Domain
 - ✅ An AWS account
+- ✅ Update Hostname and Domain Record in **variables.tf** file **line 28**
 
 ---
 ## 🔐 Step 1: Create SSH Key Pairs and Configure AWS CLI Credentials
