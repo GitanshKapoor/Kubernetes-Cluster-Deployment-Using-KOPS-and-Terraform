@@ -25,7 +25,7 @@ variable "desired_capacity" {
 variable "zone_name" {
   description = "The DNS zone name for Route53"
   type        = string
-  default     = "wordpress.gitanshdevops.space"
+  default     = "<hostname>.<domain>"
 }
 
 variable "aws_access_key" {
