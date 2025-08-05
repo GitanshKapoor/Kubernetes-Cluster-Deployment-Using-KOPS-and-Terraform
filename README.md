@@ -116,7 +116,7 @@ kops create cluster \
 Replace:
 - **your-domain** with your domain (e.g. yourdomain.com)
 - **hostname.your-domain.com** with your FQDN (e.g. example.yourdomain.com)
-- **your-kops-state-store** with your S3 bucket name created automatically check AWS Console
+- **your-kops-state-store** with your S3 bucket name created automatically check
 
 <hr>
 
