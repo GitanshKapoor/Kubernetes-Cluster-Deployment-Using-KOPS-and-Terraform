@@ -27,13 +27,13 @@ aws configure
 ```
 You’ll be prompted for:
 
-AWS Access Key ID
+- AWS Access Key ID
 
-AWS Secret Access Key
+- AWS Secret Access Key
 
-Default region name (e.g. us-east-1)
+- Default region name (e.g. us-east-1)
 
-Output format (e.g. json)
+- Output format (e.g. json)
 
 ---
 
@@ -98,13 +98,13 @@ aws configure
 ```
 You’ll be prompted for:
 
-AWS Access Key ID
+- AWS Access Key ID
 
-AWS Secret Access Key
+- AWS Secret Access Key
 
-Default region name (e.g. us-east-1)
+- Default region name (e.g. us-east-1)
 
-Output format (e.g. json)
+- Output format (e.g. json)
 
 ---
 
