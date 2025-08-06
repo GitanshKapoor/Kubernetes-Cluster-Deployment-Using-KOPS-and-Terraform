@@ -169,16 +169,18 @@ Navigate to the AWS Console → EC2 Resource Dashboard to verify that the Kubern
 
 ## 📁 Project Structure
 ```sh
-.
-├── terraform/
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│   ├── provider.tf
-│   ├── route53.tf
-│   └── security_group.tf
-├── Documents
-└── README.md
+K8s-Cluster-Setup/
+├── terraform/                            # Main Terraform infrastructure code
+│   ├── main.tf                           # Primary Terraform configuration file
+│   ├── variables.tf                      # Input variables used across modules
+│   ├── outputs.tf                        # Output values from Terraform resources
+│   ├── provider.tf                       # Provider configuration (e.g., AWS, GCP)
+│   ├── route53.tf                        # DNS configuration using AWS Route 53
+│   └── security_group.tf                 # Network security group definitions
+│
+├── Documents/                            # Documentation/Images
+│
+└── README.md                             # Project overview and usage instructions
 ```
 ---
 ## 🧹 Cleanup
