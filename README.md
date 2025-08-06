@@ -55,6 +55,17 @@ Then apply the infrastructure changes:
 terraform apply
 ```
 
+### 📌 Output
+After a successful deployment:
+
+✅ Route 53 DNS Zone ID is created and available
+
+✅ Kops Instance Public IP is provisioned
+
+✅ S3 Bucket Name for Kops state is created
+
+✅ Two template commands to deploy the Kubernetes cluster from the Kops instance
+
 ---
 
 ## 🌐 Step 3: Configure Route 53 DNS
@@ -166,9 +177,9 @@ Navigate to the AWS Console → EC2 Resource Dashboard to verify that the Kubern
 │   ├── provider.tf
 │   ├── route53.tf
 │   └── security_group.tf
+├── Documents
 └── README.md
 ```
-
 ---
 ### 🧹 Cleanup
 To destroy all the resources created by Terraform:
