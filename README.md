@@ -35,7 +35,7 @@ Default region name (e.g. us-east-1)
 
 Output format (e.g. json)
 
-<hr>
+---
 
 ## ⚙️ Step 2: Provision Infrastructure with Terraform
 Initialize and preview your Terraform setup:
@@ -55,7 +55,7 @@ Then apply the infrastructure changes:
 terraform apply
 ```
 
-<hr>
+---
 
 ## 🌐 Step 3: Configure Route 53 DNS
 <li> After Route 53 is provisioned via Terraform:
@@ -65,15 +65,15 @@ terraform apply
 <li> Copy the NS (Name Server) records.
 <br> 
 
-![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/DNS.png)
+![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/Documents//DNS.png)
 
 <li>Go to your domain registrar (e.g., GoDaddy, Namecheap).
 <li>Update the domain's nameservers to the AWS Route 53 NS records.
 <br>
   
-![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/NameServer%20Record.png)
+![NameServer Record](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/Documents//NameServer%20Record.png)
 
-<hr>
+---
 
 ## 🖥️ Step 4: Connect to KOPS EC2 Controller Instance
 SSH into the KOPS VM created by Terraform:
@@ -95,7 +95,7 @@ Default region name (e.g. us-east-1)
 
 Output format (e.g. json)
 
-<hr>
+---
 
 ## ☸️ Step 5: Create Kubernetes Cluster with KOPS
 Run the following command to create the cluster:
@@ -117,7 +117,7 @@ Replace:
 - **your-domain.com** with your FQDN (e.g. example.yourdomain.com)
 - **your-kops-state-store** with your S3 bucket name created automatically check
 
-<hr>
+---
 
 ## 🔄 Step 6: Apply the KOPS Cluster Configuration
 To build the cluster:
@@ -135,14 +135,28 @@ Replace:
 - **your-kops-state-store** with your S3 bucket name created automatically check
 
 
-<hr>
+---
 
 ## ✅ Step 7: Validate the Cluster
-Verify if your Kubernetes cluster is up and running:
+Wait for 6–7 minutes for the cluster to fully start, then verify that your Kubernetes cluster is up and running.
+#### Option-1
 ``` bash
 kops validate cluster --state=s3://<your-kops-state-store>
 ```
-📁 Project Structure
+#### Option-2
+On the Kops instance, run the following command to verify that the Kubernetes cluster is up and running:
+``` bash
+kubectl get nodes
+```
+![Cluster State](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/Documents/Cluster%20State.png)
+<br>
+#### Option-3
+Navigate to the AWS Console → EC2 Resource Dashboard to verify that the Kubernetes cluster is up and running <br><br>
+![Cluster Status](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/Documents/Cluster%20Status.png)
+
+---
+
+### 📁 Project Structure
 ```sh
 .
 ├── terraform/
@@ -155,7 +169,14 @@ kops validate cluster --state=s3://<your-kops-state-store>
 └── README.md
 ```
 
-<hr>
+---
+### 🧹 Cleanup
+To destroy all the resources created by Terraform:
+
+``` bash
+terraform destroy
+```
+---
 
 ### ⚠️ Warning
 - Ensure your domain is properly configured with Route 53
