@@ -8,10 +8,10 @@ This repository provides a step-by-step guide to provision a production-ready Ku
 
 Before you begin, ensure the following tools are installed on your machine:
 
-- ✅ AWS CLI
-- ✅ Terraform
+- ✅ [AWS CLI (latest version)](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+- ✅ [Terraform (latest version)](https://developer.hashicorp.com/terraform/install)
+- ✅ An AWS account with permissions for EC2, S3, VPC, and IAM
 - ✅ A Domain
-- ✅ An AWS account
 - ✅ Update your Hostname and Domain in **variables.tf** file **line 28**
 
 ---
