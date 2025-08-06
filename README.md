@@ -150,18 +150,18 @@ Replace:
 
 ## ✅ Step 7: Validate the Cluster
 Wait for 6–7 minutes for the cluster to fully start, then verify that your Kubernetes cluster is up and running.
-#### Option-1
+#### 🚀 Option-1
 ``` bash
 kops validate cluster --state=s3://<your-kops-state-store>
 ```
-#### Option-2
+#### 🚀 Option-2
 On the Kops instance, run the following command to verify that the Kubernetes cluster is up and running:
 ``` bash
 kubectl get nodes
 ```
 ![Cluster State](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/Documents/Cluster%20State.png)
 <br>
-#### Option-3
+#### 🚀 Option-3
 Navigate to the AWS Console → EC2 Resource Dashboard to verify that the Kubernetes cluster is up and running <br><br>
 ![Cluster Status](https://github.com/GitanshKapoor/Kubernetes-Cluster-Deployment-Using-KOPS-and-Terraform/blob/main/Documents/Cluster%20Status.png)
 
