@@ -167,7 +167,7 @@ Navigate to the AWS Console → EC2 Resource Dashboard to verify that the Kubern
 
 ---
 
-### 📁 Project Structure
+## 📁 Project Structure
 ```sh
 .
 ├── terraform/
@@ -181,7 +181,7 @@ Navigate to the AWS Console → EC2 Resource Dashboard to verify that the Kubern
 └── README.md
 ```
 ---
-### 🧹 Cleanup
+## 🧹 Cleanup
 To destroy all the resources created by Terraform:
 
 ``` bash
@@ -189,7 +189,7 @@ terraform destroy
 ```
 ---
 
-### ⚠️ Warning
+## ⚠️ Warning
 - Ensure your domain is properly configured with Route 53
 - S3 bucket used by KOPS must be in the same region as your cluster
 - The SSH public key path must match the one on your local machine
